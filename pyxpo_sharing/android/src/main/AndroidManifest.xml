@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Hands files from the app's cache and files folders to the share sheet without exposing file:// paths (no AndroidX needed). -->
+        <provider
+            android:name="dev.pyxpo.modules.sharing.PxShareFileProvider"
+            android:authorities="${applicationId}.pyxpo.share"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+    </application>
+</manifest>

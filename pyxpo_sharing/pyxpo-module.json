@@ -1,0 +1,11 @@
+{
+  "name": "sharing",
+  "native": "Share",
+  "ios": { "classes": ["ShareModule"] },
+  "android": {
+    "namespace": "dev.pyxpo.modules.sharing",
+    "classes": ["dev.pyxpo.modules.sharing.ShareModule"],
+    "dependencies": [],
+    "minSdk": 24
+  }
+}
