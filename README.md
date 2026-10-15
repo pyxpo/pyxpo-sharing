@@ -2,7 +2,7 @@
 
 System share sheet for pyxpo apps (react-native Share shape).
 
-This is an optional [pyxpo](https://github.com/ivishalchaubey/pyxpo) native module. Apps that do not
+This is an optional [pyxpo](https://github.com/pyxpo/pyxpo) native module. Apps that do not
 list it carry none of its code, permissions or dependencies.
 
 ## Install
