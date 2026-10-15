@@ -18,6 +18,8 @@ class ShareModule : PxModule() {
         if (method != "share") { reply(null, "unknown native call Share.$method"); return }
         val paths = args.optJSONArray(0) ?: JSONArray()
         val message = args.optString(1, "")
+        val mimeOverride = args.optString(2, "")
+        val title = args.optString(3, "")
         val app = ctx.activity
         val uris = ArrayList<Uri>()
         val mimes = HashSet<String>()
@@ -34,6 +36,7 @@ class ShareModule : PxModule() {
         }
         val intent = Intent(if (uris.size > 1) Intent.ACTION_SEND_MULTIPLE else Intent.ACTION_SEND)
         intent.type = when {
+            mimeOverride.isNotEmpty() -> mimeOverride
             uris.isEmpty() -> "text/plain"
             mimes.size == 1 -> mimes.first()
             mimes.all { it.startsWith("image/") } -> "image/*"
@@ -47,7 +50,7 @@ class ShareModule : PxModule() {
             intent.clipData = ClipData.newRawUri("", uris[0]).also { c -> for (u in uris.drop(1)) c.addItem(ClipData.Item(u)) }
         }
         try {
-            app.startActivity(Intent.createChooser(intent, null))
+            app.startActivity(Intent.createChooser(intent, title.ifEmpty { null }))
             reply(mapOf("action" to "sharedAction"), null)
         } catch (e: Throwable) {
             reply(null, e.message ?: e.toString())

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pyxpo-sharing"
 dynamic = ["version"]
-description = "System share sheet for pyxpo apps (react-native Share shape)."
+description = "System share sheet for pyxpo apps (react-native Share and expo-sharing shapes)."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
