@@ -1,5 +1,7 @@
 # pyxpo-sharing
 
+[![CI](https://github.com/pyxpo/pyxpo-sharing/actions/workflows/ci.yml/badge.svg)](https://github.com/pyxpo/pyxpo-sharing/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/pyxpo-sharing)](https://pypi.org/project/pyxpo-sharing/) [![Python](https://img.shields.io/pypi/pyversions/pyxpo-sharing)](https://pypi.org/project/pyxpo-sharing/) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 The system share sheet for [pyxpo](https://github.com/pyxpo/pyxpo) apps, written in Python: send a link, a message or a
 file to Messages, Mail, Drive, Quick Share and every other app on the phone. It offers the react-native `Share` shape
 and the expo-sharing `Sharing` shape.
