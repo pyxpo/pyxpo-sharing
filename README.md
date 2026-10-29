@@ -5,7 +5,7 @@ file to Messages, Mail, Drive, Quick Share and every other app on the phone. It 
 and the expo-sharing `Sharing` shape.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo/main/packages/sharing/docs/images/hero.png" width="820" alt="The sharing module on Android and iOS: the system share sheet open with a message and a link">
+  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo-sharing/main/docs/images/hero.png" width="820" alt="The sharing module on Android and iOS: the system share sheet open with a message and a link">
 </p>
 
 ```python
@@ -93,7 +93,7 @@ def ShareApp():
 > async work from `use_async` with a counter in state, as above.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo/main/packages/sharing/docs/images/sheet.png" width="720" alt="The share sheet on Android and iOS">
+  <img src="https://raw.githubusercontent.com/pyxpo/pyxpo-sharing/main/docs/images/sheet.png" width="720" alt="The share sheet on Android and iOS">
 </p>
 
 ## Sharing text and links
