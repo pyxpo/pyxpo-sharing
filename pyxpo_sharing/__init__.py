@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional
 
 from pyxpo.module_api import call, require_linked, snake_aliases
 
-__version__ = "0.1.0a1"
+__version__ = "0.1.0a2"
 
 _in_flight = False
 
